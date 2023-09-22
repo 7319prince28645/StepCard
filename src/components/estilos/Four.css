@@ -1,0 +1,42 @@
+.contenedor span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fishingEnvolver{
+  background-color: rgba(212, 210, 225, 0.523);
+  border-radius: 15px;
+}
+.contenedor span, .contenedor hr{
+  margin: 0 2rem;
+}
+.envolver span:first-child{
+  margin-bottom: 15px;
+}
+.arcade{
+  font-weight: bold;
+}
+.total{
+  font-weight: bold;
+  color: #2c1ec3;
+  font-size: 1.2rem;
+}
+.opaco{
+  font-weight: 400;
+  color: #9f9f9f;
+}
+.change{
+  font-size: 1.1rem;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-bottom: -0.1rem;
+}
+.change:hover{
+  color: #2c1ec3;
+}
+@media screen and (max-width: 550px){
+
+  .spanes p{
+   margin-top: .75rem;
+  }
+}

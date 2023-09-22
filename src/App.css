@@ -1,0 +1,131 @@
+*{
+  box-sizing: border-box;
+}
+#root {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+.contenedor-Principal {
+  border-radius: 15px;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 17rem 35rem;
+  grid-template-rows: 34rem;
+  padding: 10px;
+}
+.section2{
+  display: grid;
+  margin: 0 4rem;
+}
+.principal{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-rows: 1fr 10%;
+}
+.thanks{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.thanks button{
+  width: 10rem;
+  height: 3rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #f5f5f5;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.botones{
+  display: flex;
+  justify-content: space-between;
+
+}
+.solo{
+  display: flex;
+  justify-content: flex-end;
+}
+button{
+  height: 2.5rem;
+  width:6rem;
+}
+.back{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 600;
+}   
+.next{
+  width: 7rem;
+  height: 2.5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(27, 7, 158);
+  color: #fff;
+  cursor: pointer;
+}
+.soloNext{
+  position: relative;
+  width: 7rem;
+  height: 2.5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(27, 7, 158);
+  color: #fff;
+  cursor: pointer;
+}
+.soloNext:hover{
+  background-color: rgba(20, 9, 90, 0.8);
+}
+.back:hover{
+  background-color: rgba(124, 117, 117, 0.04);
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 550px) {
+  .section2{
+    margin: 0 1rem;
+    position: relative;
+    top: -8%;
+    height: calc(100% + 8%);
+  }
+  .contenedor-Principal {
+    position: relative;
+    background-color: #e5dfdf;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 1fr;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+    .principal{
+      grid-template-rows:  75% 1fr ;
+    }
+    .envolver{
+      padding: .5rem 2rem;
+      border-radius: 15px;
+      background-color: #fff;
+    }
+    .botones{
+      align-items: flex-end;
+    }
+}
+

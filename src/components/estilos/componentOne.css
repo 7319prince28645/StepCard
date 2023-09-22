@@ -1,0 +1,27 @@
+.componenteOne main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.componenteOne main span {
+  display: grid;
+}
+
+input {
+  padding: 0.75rem 0;
+}
+
+.componenteOne main span:nth-child(1) {
+  margin-top: 1rem;
+}
+.botarFondo{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+@media screen and (max-width: 550px) {
+  .componenteOne main {
+    gap: 0;
+  }
+}

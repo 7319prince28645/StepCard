@@ -1,0 +1,80 @@
+.elegir{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.opciones{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #f0f0f0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 100%;
+   
+    cursor: pointer;
+    
+}
+.opciones:hover{
+    background-color: #f0f0f0;
+}
+.imagen{
+    width: 3rem;
+    padding: 15px 0 10px 0;
+}
+
+.dates{
+    display: flex;
+    background-color: rgba(213, 211, 211, 0.277);
+    justify-content: center;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  
+}
+:root {
+    --color-button: #fdffff;
+}
+.switch-button {
+    display: inline-block;
+}
+.switch-button .switch-button__checkbox {
+    display: none;
+}
+.switch-button .switch-button__label {
+    background-color: rgb(27, 7, 158);
+    width: 4.5rem;
+    height: 2rem;
+    border-radius: 3rem;
+    padding-top: 0.15rem;
+    padding-left: 0.15rem;
+    display: inline-block;
+}
+.switch-button .switch-button__label:before {
+    transition: .2s;
+    display: block;
+    position: absolute;
+    width: 1.7rem;
+    height: 1.7rem;
+    background-color: var(--color-button);
+    content: '';
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 0px 1px var(--color-black);
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label {
+    background-color: rgb(27, 7, 158);
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label:before {
+    transform: translateX(2.5rem);
+}
+.centrarBotones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.selected-card{
+    border: 3px solid red;
+}

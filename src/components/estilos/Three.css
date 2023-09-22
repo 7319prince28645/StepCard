@@ -1,0 +1,43 @@
+.cuerpo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.cuerpo label {
+  display: flex;
+  border: 1px solid rgb(27, 7, 158);
+  border-radius: 5px;
+  align-items: center;
+  gap: 1.5rem;
+}
+.profile {
+  position: relative;
+}
+
+.positionLast {
+  position: absolute;
+  right: 0;
+  margin-right: 1rem;
+  color: rgb(38, 14, 193);
+}
+.profile input {
+  width: 1rem;
+  height: 1rem;
+  margin-left: 1rem;
+}
+.profile span p:first-child {
+  font-weight: bold;
+}
+.profile span p:last-child {
+  font-size: 0.83rem;
+  color: #a9a9a9;
+  margin-top: -.8em;
+  font-weight: 600;
+}
+.checked{
+  background-color: rgba(186, 184, 198, 0.218);
+}
+.profile:hover{
+  background-color: rgba(212, 210, 225, 0.523);
+}
