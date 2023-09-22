@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./estilos/ComponentOne.css";
+import "./estilos/componentOne.css";
 import { ToastContainer, toast } from "react-toastify";
 function ComponentOne({ recibirDato, step }) {
   const [datos, setDatos] = useState({
